@@ -1,0 +1,74 @@
+.projectsTab {
+  background-color: #ffef5f;
+  min-height: 30%;
+}
+
+.projectsTitle {
+  font-size: 5vw;
+  color: #9c7818;
+  text-align: left;
+  font-family: Futura;
+  font-weight: bold;
+  float: left;
+  margin-top: 3%;
+}
+
+.projectsCircle {
+  background-color: #9c7818;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 12%;
+  margin: 6% 2% 6% 2%;
+}
+
+.rightProjectsCircle {
+  background-color: #9c7818;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 12%;
+  margin: 6% 4% 6% 2%;
+}
+
+.projectsBorder {
+  border: solid;
+  border-color: #9c7818;
+  border-width: 0 0 3px 0;
+  margin: 0 50px 0 50px;
+}
+
+.projectScroller {
+  display: flex;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.project {
+  flex-shrink: 0;
+  width: 30%;
+  aspect-ratio: 1/1.3;
+  margin: 5% 3% 5% 3%;
+  background-color: #9c7818;
+  border-radius: 50px;
+  scroll-snap-align: center;
+  overflow: hidden;
+  font-size: 80px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.1); /* Slightly enlarge the item */
+}
+
+.projectScroller::-webkit-scrollbar { 
+  display: none;
+}
+
+.gif {
+  width: 100%;
+  margin-top: -30%;
+}
+
+.music {
+  width: 100%;
+  margin-top: 0%;
+}

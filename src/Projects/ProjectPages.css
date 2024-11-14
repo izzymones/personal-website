@@ -1,0 +1,58 @@
+.projectDiv {
+  background-color: #353535;
+  height: 100vh;
+}
+
+.homeButton {
+  text-decoration: none;
+}
+
+.homeButtonTitle {
+  padding-top: 1%;
+  text-align: left;
+  margin-left: 2%;
+  font-size: 3vw;
+  color: white;
+  font-family: Futura;
+}
+
+.horizDiv {
+  flex-direction: row;
+  display: flex;
+}
+
+.vertDiv {
+  flex-direction: column;
+  width: 50%;
+}
+
+.projectTitle {
+  margin-left: 7.5%;
+  margin-top: 10%;
+  text-align: left;
+  font-size: 5vw;
+  color: white;
+  font-family: Futura;
+  font-weight: bold;
+}
+
+.projectParagraph {
+  margin-left: 7.5%;
+  margin-top: 5%;
+  text-align: left;
+  color: white;
+  font-family: Futura;
+  font-size: 2vw;
+}
+
+.imageHolder {
+  width: 50%;
+}
+
+.musicImage {
+  width: 50%;
+}
+
+.mekaTankImage {
+  width: 50%;
+}

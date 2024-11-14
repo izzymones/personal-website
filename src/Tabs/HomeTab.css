@@ -1,0 +1,151 @@
+.homeTab {
+  aspect-ratio: 2360/1640;
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  position: relative;
+  align-items: center;
+}
+
+.name {
+  font-size: 120px;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: Futura;
+  font-weight: bold;
+}
+
+.spaceShip {
+  position: absolute;
+  height: 60%;
+  margin-top: 14.2%;
+  margin-left: 0.6%;
+}
+
+.movingFire {
+  position: absolute;
+  height: 60%;
+  margin-top: 26%;
+  visibility: hidden;
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(0.5%, 0.5%) rotate(1deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-0.5%, 0.5%) rotate(-1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes takeOff {
+  0% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes fireTakeOff {
+  0% {
+    transform: translateY(160%) scale(1);
+  }
+  100% {
+    transform: translateY(-360%) scale(1);
+  }
+}
+
+@keyframes shadowTakeOff {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-300%) translateY(200%);
+  }
+}
+
+.spaceShip.shaking {
+  animation: horizontal-shaking 0.15s infinite;
+}
+
+.shadow.shaking {
+  animation: horizontal-shaking 0.15s infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .spaceShip.takeOff {
+      animation: takeOff linear both;
+      animation-timeline: view();
+      animation-range: 42% 100%;
+    } 
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .movingFire.fireTakeOff {
+      animation: fireTakeOff linear both;
+      animation-timeline: view();
+      visibility:visible;
+      animation-range: 0% 100%;
+    } 
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .shadow.shadowTakeOff {
+      animation: shadowTakeOff linear both;
+      animation-timeline: view();
+      animation-range: 12% 100%;
+    } 
+  }
+}
+
+.shadowClipDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1640;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+ }
+
+
+.homeBackground {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1640;
+}
+
+.homeBorderDiv {
+  margin-top: 63.3%;
+  position: absolute;
+}
+
+.homeBorder {
+  width: 100%;
+  display: block;
+}
+
+.sun {
+  position: absolute;
+  width: 50%;
+  margin-right: -50%;
+}
+
+.moon {
+  position: absolute;
+  width: 35%;
+  margin-top: 5%;
+  margin-left: -60%;
+}
+
+.shadow {
+  position: absolute;
+  width: 35%;
+  margin-top: 48%;
+  margin-left: -27.5%;
+}

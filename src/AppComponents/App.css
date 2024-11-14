@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1e1e1e;
+}
+
+.borderDiv {
+  margin-top: auto;
+}
+
+.border {
+  width: 100%;
+  display: block;
+}
+
+.horizFlex {
+  display: flex;
+  flex-direction: row;
+  margin: 0 7.5% 0 7.5%;
+  align-items: center;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.wordHolder {
+  height: 40px;
+  width: 55%;
+}
+
+.header {
+  font-size: 32px;
+  color: white;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph {
+  font-size: 28px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  width: 45%;
+}
+
+.tinyCow {
+  width: 12%;
+  aspect-ratio: 273/218;
+  align-self: center;
+  margin: 6% 2% 6% 4%;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyCow:hover {
+  transform: scale(1.3);
+}
+
+.tinyPlanet {
+  width: 12%;
+  aspect-ratio: 345/340;
+  align-self: center;
+  margin: 1% 2% 1% 2%;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyPlanet:hover {
+  transform: scale(1.3);
+}
+
+.tinyLaptop {
+  width: 12%;
+  margin: 1% 2% 1% 2%;
+  aspect-ratio: 192/160;
+  align-self: center;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyLaptop:hover {
+  transform: scale(1.3);
+}
+
+.tinyRabbit {
+  width: 12%;
+  margin: 1% 2% 1% 2%;
+  aspect-ratio: 241/283;
+  align-self: center;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyRabbit:hover {
+  transform: scale(1.3);
+}
+
+.tinyBear {
+  width: 12%;
+  aspect-ratio: 254/261;
+  align-self: center;
+  margin: 1% 2% 1% 2%;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyBear:hover {
+  transform: scale(1.3);
+}
+
+.tinyRock {
+  width: 12%;
+  aspect-ratio: 207/176;
+  align-self: center;
+  margin: 1% 4% 1% 2%;
+  transition: transform 0.15s ease-in-out;
+}
+
+.tinyRock:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,445 @@
+.goalsTab {
+  background-color: #03000a;
+  border: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  aspect-ratio: 2360 / 1640;
+  width: 100%;
+}
+
+.goalsTitle {
+  font-size: 5vw;
+  color: #3d93bd;
+  text-align: left;
+  font-family: Futura;
+  font-weight: bold;
+  float: left;
+  margin-top: 3%;
+}
+
+.goalsCircle {
+  background-color: #3d93bd;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 12%;
+  margin: 6% 2% 6% 2%;
+}
+
+.rightGoalsCircle {
+  background-color: #3d93bd;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 12%;
+  margin: 6% 4% 6% 2%;
+}
+
+.goalsBorder {
+  border: solid;
+  border-color: #3d93bd;
+  border-width: 0 0 3px 0;
+  margin: 0 50px 0 50px;
+  position: relative;
+}
+
+.spaceHolder {
+position: relative;
+}
+
+.goalsFlex {
+  display: flex;
+  flex-direction: row;
+  margin: 10% 7.5% 0 7.5%;
+  position: absolute;
+}
+
+.goalsTextBoxHolder {
+  width: 50%;
+}
+
+.goalsTextBox {
+  margin: 20% 0 0 30%;
+  padding: 25px;
+  background-color: #3d93bdbd;
+  border-radius: 30px;
+  min-height: 500px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.goalsTextBox:hover {
+  transform: scale(1.1);
+  background-color: #3d92bd;
+}
+
+.planetDiv {
+  position: relative;
+  width: 50%;
+}
+
+.pinkClipDiv {
+  margin-top: 40%;
+  width: 100%;
+  position: absolute;
+  clip-path: circle(40% at 60% 80%);
+}
+
+.pinkPlanet {
+  margin: -35% 0 0 -50%;
+  position: absolute;
+  width: 120%;
+}
+
+.pinkShadingHolder {
+  position: absolute;
+  width: 50%
+}
+
+.pinkShading {
+  position: absolute;
+  margin-left: 13.2%;
+  margin-top: 23.2%;
+  width: 113.4%;
+}
+
+.pinkGlow {
+  width: 300%;
+  margin-left: -80%;
+  margin-top: -22%;
+  position: absolute;
+}
+
+@keyframes pinkMoveImage {
+  0% {
+      transform: translate(-30%, 0);
+  }
+  100% {
+      transform: translate(30%, 5%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .pinkPlanet {
+      animation: pinkMoveImage linear both;
+      animation-timeline: scroll();
+      animation-range: 0% 100%;
+    } 
+  }
+}
+
+.yellowClipDiv {
+  margin-top: 90%;
+  margin-left: 75%;
+  width: 55%;
+  position: absolute;
+  clip-path: circle(40% at 60% 80%);
+}
+
+.yellowPlanet {
+  margin: -35% 0 0 -50%;
+  position: absolute;
+  width: 200%;
+}
+
+.yellowShadingHolder {
+  position: absolute;
+  width: 50%
+}
+
+.yellowShading {
+  position: absolute;
+  margin-left: 135%;
+  margin-top: 148.5%;
+  width: 62.5%;
+}
+
+.yellowGlow {
+  width: 120%;
+  margin-left: 104%;
+  margin-top: 121%;
+  position: absolute;
+}
+
+@keyframes yellowMoveImage {
+  0% {
+      transform: translate(20%, 0%);
+  }
+  100% {
+      transform: translate(-30%, -10%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .yellowPlanet {
+      animation: yellowMoveImage linear both;
+      animation-timeline: scroll();
+      animation-range: 0% 100%;
+
+    } 
+  }
+}
+
+.spaceBackground {
+  width: 100%;
+  display: block;
+  position: absolute;
+ }
+
+ .asteroidsClipDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360 / 1640;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+ }
+
+ .spaceShipClipDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360 / 1640;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+ }
+
+ .asteroids {
+  position: absolute;
+  width: 50%;
+  margin-top: 25%;
+  margin-left: -20%;
+  transform-origin: 55% 20%;
+ }
+
+ @keyframes moveAsteroids {
+  from {
+    transform: rotate(-20deg) scale(1.5);
+  }
+  to {
+    transform: rotate(-60deg) scale(1.8);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .asteroids {
+      animation: moveAsteroids linear both;
+      animation-timeline: view();
+      animation-range: 0% 100%;
+    } 
+  }
+}
+
+.clouds {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: -35%;
+}
+
+.goalsBorderDiv {
+  position: relative;
+  width: 100vw;
+}
+
+.pinkBorder {
+  margin-top: 63.5%;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
+
+.spaceShip2 {
+  position: absolute;
+  width: 10%;
+}
+
+.fire {
+  position: absolute;
+  width: 10%;
+}
+
+.fuelTank {
+  position: absolute;
+  width: 10%;
+}
+
+.leftBooster {
+  position: absolute;
+  width: 10%;
+}
+
+.rightBooster {
+  position: absolute;
+  width: 10%;
+}
+
+@keyframes moveRocket {
+  0% {
+    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
+  }
+  10% {
+    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
+  }
+  20% {
+    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
+  }
+  30% {
+    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
+  }
+  40% {
+    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
+  }
+  50% {
+    transform: translate(-40%, 180%) rotate(220deg) scale(1.9);
+  }
+  60% {
+    transform: translate(-100%, 240%) rotate(215deg) scale(1.95);
+  }
+  70% {
+    transform: translate(-135%, 300%) rotate(180deg) scale(2.0);
+  }
+  80% {
+    transform: translate(-90%, 360%) rotate(135deg) scale(2.05);
+  }
+  100% {
+    transform: translate(300%, 500%) rotate(90deg) scale(2.1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .spaceShip2 {
+      animation: moveRocket linear both;
+      animation-timeline: scroll();
+      animation-range-start: 15%;
+      animation-range-end: 35%;
+    } 
+  }
+}
+
+@keyframes moveFuelTank {
+  0% {
+    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
+  }
+  10% {
+    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
+  }
+  20% {
+    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
+  }
+  30% {
+    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
+  }
+  40% {
+    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
+  }
+  100% {
+    transform: translate(300%, 500%) rotate(90deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .fuelTank {
+      animation: moveFuelTank linear both;
+      animation-timeline: scroll();
+      animation-range-start: 15%;
+      animation-range-end: 35%;
+    } 
+  }
+}
+
+@keyframes moveLeftBooster {
+  0% {
+    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
+  }
+  10% {
+    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
+  }
+  20% {
+    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
+  }
+  100% {
+    transform: translate(300%, 200%) rotate(270deg) scale(0.5);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .leftBooster {
+      animation: moveLeftBooster linear both;
+      animation-timeline: scroll();
+      animation-range-start: 15%;
+      animation-range-end: 35%;
+    } 
+  }
+}
+
+@keyframes moveRightBooster {
+  0% {
+    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
+  }
+  10% {
+    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
+  }
+  20% {
+    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
+  }
+  100% {
+    transform: translate(100%, 500%) rotate(-540deg) scale(0.9);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .rightBooster {
+      animation: moveRightBooster linear both;
+      animation-timeline: scroll();
+      animation-range-start: 15%;
+      animation-range-end: 35%;
+    } 
+  }
+}
+
+@keyframes moveFire {
+  0% {
+    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
+  }
+  10% {
+    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
+  }
+  20% {
+    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
+  }
+  30% {
+    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
+  }
+  40% {
+    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
+  }
+  50% {
+    transform: translate(-40%, 180%) rotate(220deg) scale(1.9);
+  }
+  60% {
+    transform: translate(-100%, 240%) rotate(215deg) scale(1.95);
+  }
+  70% {
+    transform: translate(-135%, 300%) rotate(180deg) scale(2.0);
+  }
+  80% {
+    transform: translate(-90%, 360%) rotate(135deg) scale(2.05);
+  }
+  100% {
+    transform: translate(300%, 500%) rotate(90deg) scale(2.1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: scroll()) {
+    .fire {
+      animation: moveFire linear both;
+      animation-timeline: scroll();
+      animation-range-start: 15%;
+      animation-range-end: 35%;
+    } 
+  }
+}
