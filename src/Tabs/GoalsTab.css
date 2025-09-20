@@ -1,78 +1,51 @@
 .goalsTab {
   background-color: #03000a;
-  border: solid;
-  border-color: black;
-  border-width: 0 0 1px 0;
-  aspect-ratio: 2360 / 1640;
+  aspect-ratio: 2360 / 1147.2;
   width: 100%;
-}
-
-.goalsTitle {
-  font-size: 5vw;
-  color: #3d93bd;
-  text-align: left;
-  font-family: Futura;
-  font-weight: bold;
-  float: left;
-  margin-top: 3%;
-}
-
-.goalsCircle {
-  background-color: #3d93bd;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  width: 12%;
-  margin: 6% 2% 6% 2%;
-}
-
-.rightGoalsCircle {
-  background-color: #3d93bd;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  width: 12%;
-  margin: 6% 4% 6% 2%;
-}
-
-.goalsBorder {
-  border: solid;
-  border-color: #3d93bd;
-  border-width: 0 0 3px 0;
-  margin: 0 50px 0 50px;
-  position: relative;
+  overflow: hidden;
 }
 
 .spaceHolder {
 position: relative;
 }
 
-.goalsFlex {
-  display: flex;
-  flex-direction: row;
-  margin: 10% 7.5% 0 7.5%;
+.OutroDiv {
+  width: 30vw;
+  right:0;
   position: absolute;
+  height: 48.64vw;
 }
 
-.goalsTextBoxHolder {
-  width: 50%;
+.outro {
+  width: 30vw;
+  height: 100%;
+  text-align: left;
+  background-color: #153e37;
+  display: flex;
+  flex-direction: column;
 }
 
-.goalsTextBox {
-  margin: 20% 0 0 30%;
-  padding: 25px;
-  background-color: #3d93bdbd;
-  border-radius: 30px;
-  min-height: 500px;
-  transition: transform 0.15s ease-in-out;
+.thanksDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
 }
 
-.goalsTextBox:hover {
-  transform: scale(1.1);
-  background-color: #3d92bd;
+.outroHeader {
+  color: white;
+  font-size: 3vw;
+  font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.outroBody {
+  color: white;
+  font-size: 1.5vw;
 }
 
 .planetDiv {
   position: relative;
-  width: 50%;
+  width: 38%;
 }
 
 .pinkClipDiv {
@@ -105,25 +78,6 @@ position: relative;
   margin-left: -80%;
   margin-top: -22%;
   position: absolute;
-}
-
-@keyframes pinkMoveImage {
-  0% {
-      transform: translate(-30%, 0);
-  }
-  100% {
-      transform: translate(30%, 5%);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .pinkPlanet {
-      animation: pinkMoveImage linear both;
-      animation-timeline: scroll();
-      animation-range: 0% 100%;
-    } 
-  }
 }
 
 .yellowClipDiv {
@@ -159,35 +113,15 @@ position: relative;
   position: absolute;
 }
 
-@keyframes yellowMoveImage {
-  0% {
-      transform: translate(20%, 0%);
-  }
-  100% {
-      transform: translate(-30%, -10%);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .yellowPlanet {
-      animation: yellowMoveImage linear both;
-      animation-timeline: scroll();
-      animation-range: 0% 100%;
-
-    } 
-  }
-}
-
 .spaceBackground {
-  width: 100%;
+  width: 70%;
   display: block;
   position: absolute;
  }
 
  .asteroidsClipDiv {
   position: absolute;
-  width: 100%;
+  width: 70%;
   aspect-ratio: 2360 / 1640;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   overflow: clip;
@@ -195,7 +129,7 @@ position: relative;
 
  .spaceShipClipDiv {
   position: absolute;
-  width: 100%;
+  width: 70%;
   aspect-ratio: 2360 / 1640;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   overflow: clip;
@@ -208,25 +142,6 @@ position: relative;
   margin-left: -20%;
   transform-origin: 55% 20%;
  }
-
- @keyframes moveAsteroids {
-  from {
-    transform: rotate(-20deg) scale(1.5);
-  }
-  to {
-    transform: rotate(-60deg) scale(1.8);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .asteroids {
-      animation: moveAsteroids linear both;
-      animation-timeline: view();
-      animation-range: 0% 100%;
-    } 
-  }
-}
 
 .clouds {
   position: absolute;
@@ -272,174 +187,7 @@ position: relative;
   width: 10%;
 }
 
-@keyframes moveRocket {
-  0% {
-    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
-  }
-  10% {
-    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
-  }
-  20% {
-    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
-  }
-  30% {
-    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
-  }
-  40% {
-    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
-  }
-  50% {
-    transform: translate(-40%, 180%) rotate(220deg) scale(1.9);
-  }
-  60% {
-    transform: translate(-100%, 240%) rotate(215deg) scale(1.95);
-  }
-  70% {
-    transform: translate(-135%, 300%) rotate(180deg) scale(2.0);
-  }
-  80% {
-    transform: translate(-90%, 360%) rotate(135deg) scale(2.05);
-  }
-  100% {
-    transform: translate(300%, 500%) rotate(90deg) scale(2.1);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .spaceShip2 {
-      animation: moveRocket linear both;
-      animation-timeline: scroll();
-      animation-range-start: 15%;
-      animation-range-end: 35%;
-    } 
-  }
-}
-
-@keyframes moveFuelTank {
-  0% {
-    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
-  }
-  10% {
-    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
-  }
-  20% {
-    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
-  }
-  30% {
-    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
-  }
-  40% {
-    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
-  }
-  100% {
-    transform: translate(300%, 500%) rotate(90deg) scale(1);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .fuelTank {
-      animation: moveFuelTank linear both;
-      animation-timeline: scroll();
-      animation-range-start: 15%;
-      animation-range-end: 35%;
-    } 
-  }
-}
-
-@keyframes moveLeftBooster {
-  0% {
-    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
-  }
-  10% {
-    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
-  }
-  20% {
-    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
-  }
-  100% {
-    transform: translate(300%, 200%) rotate(270deg) scale(0.5);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .leftBooster {
-      animation: moveLeftBooster linear both;
-      animation-timeline: scroll();
-      animation-range-start: 15%;
-      animation-range-end: 35%;
-    } 
-  }
-}
-
-@keyframes moveRightBooster {
-  0% {
-    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
-  }
-  10% {
-    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
-  }
-  20% {
-    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
-  }
-  100% {
-    transform: translate(100%, 500%) rotate(-540deg) scale(0.9);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .rightBooster {
-      animation: moveRightBooster linear both;
-      animation-timeline: scroll();
-      animation-range-start: 15%;
-      animation-range-end: 35%;
-    } 
-  }
-}
-
-@keyframes moveFire {
-  0% {
-    transform: translate(-700%, 0%) rotate(60deg) scale(1.7);
-  }
-  10% {
-    transform: translate(-400%, -20%) rotate(80deg) scale(1.7);
-  }
-  20% {
-    transform: translate(-240%, 0%) rotate(90deg) scale(1.75);
-  }
-  30% {
-    transform: translate(-80%, 60%) rotate(145deg) scale(1.8);
-  }
-  40% {
-    transform: translate(-40%, 130%) rotate(180deg) scale(1.85);
-  }
-  50% {
-    transform: translate(-40%, 180%) rotate(220deg) scale(1.9);
-  }
-  60% {
-    transform: translate(-100%, 240%) rotate(215deg) scale(1.95);
-  }
-  70% {
-    transform: translate(-135%, 300%) rotate(180deg) scale(2.0);
-  }
-  80% {
-    transform: translate(-90%, 360%) rotate(135deg) scale(2.05);
-  }
-  100% {
-    transform: translate(300%, 500%) rotate(90deg) scale(2.1);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: scroll()) {
-    .fire {
-      animation: moveFire linear both;
-      animation-timeline: scroll();
-      animation-range-start: 15%;
-      animation-range-end: 35%;
-    } 
-  }
+.linksDiv {
+  display: flex;
+  flex-direction: column;
 }

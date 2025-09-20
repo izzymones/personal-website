@@ -1,0 +1,285 @@
+.SoftwareEngineeringTab {
+  display: flex;
+  aspect-ratio: 2400/6000;
+  flex-direction: column;
+  background-color: #52012a;
+  position: relative;
+  border-top: 1vw solid white;
+}
+
+.SEticker {
+  overflow: hidden;
+  margin-top: -1%;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  border-bottom: 1vw solid white;
+  margin-bottom: 1vw;
+}
+
+.SEticker__track {
+display: inline-flex;
+will-change: transform;
+animation: ticker-scroll 15s linear infinite;
+backface-visibility: hidden;
+}
+
+.SEticker__item {
+flex: 0 0 auto;
+padding-right: 2rem;
+font-family: 'Playfair Display', serif;
+font-size: 8vw;
+color: white;
+letter-spacing: 0;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+.SEgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, auto);
+}
+
+.SEtextDiv {
+  font-family: 'Lato', sans-serif;
+  font-size: 2vw;
+  position: relative;
+  font-weight: 300;
+  padding: 5%;
+  align-self: center;
+  text-align: left;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.SEimageDiv {
+  position: relative;
+  padding: 5%;
+  background-color: white;
+  margin: 2%;
+}
+.SEimageDiv2 {
+  position: relative;
+  padding: 5%;
+}
+
+.CosmicCliffs {
+  width: 100%;
+
+}
+
+.SouthernRingNebula {
+  width: 75%;
+  left: 20%;
+  top: 10%;
+  position: absolute;
+
+}
+
+.PhantomGalaxy {
+  width: 35%;
+  left: 10%;
+  top: 50%;
+  position: absolute;
+}
+
+.SEtitle {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3vw;
+  margin-bottom: 2%;
+  color: white;
+  text-align: center;
+  letter-spacing: 0;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.SEbody {
+  font-family: 'Lato', sans-serif;
+  font-size: 2vw;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.SEbody2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-align: left;
+  width: 80%;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.pipeworksDiv {
+  flex: 1 1 50%;
+  display: grid;
+  place-items: center;
+  margin: 0% 10% 0% 0%;
+}
+
+.pipeworks {
+  display: block;
+  width: 35vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.MusicApp1 {
+  position: absolute;
+  transform: rotate(10deg);
+  left: 40%;
+  top:15%;
+  width: 50%;
+}
+
+.MusicApp2 {
+  position: absolute;
+  left: 20%;
+  top:15%;
+  width: 50%;
+  transform: rotate(-10deg);
+}
+
+.musicFlexDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+
+}
+
+.SEtextDiv2 {
+  flex: 1 1 50%;
+  width: auto;
+  margin: 0% 5% 0% 10%;
+}
+
+.starBunnyDiv {
+  margin-right: 35%;
+  margin-top: 30%;
+}
+
+.starBunny {
+  width: 150%;
+}
+
+.SErow1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+  margin: 15% 0% 15% 0%;
+}
+
+.SErow2 {
+  display: flex;
+  margin: 15% 0% 15% 0%;
+}
+
+.SErow2Left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.pipeworksTitle {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3vw;
+  margin-bottom: 2%;
+  color: white;
+  text-align: left;
+  letter-spacing: 0;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.musicTitle {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3vw;
+  margin-bottom: 2%;
+  color: white;
+  text-align: center;
+  letter-spacing: 0;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.musicBody {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-align: left;
+  margin: 4%;
+  width: 60%;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.SErow3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: clamp(16px, 4vw, 48px);
+  padding-inline: clamp(16px, 8vw, 12vw);
+  margin-block: clamp(32px, 8vw, 120px);
+}
+
+.mekaColumn {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vw, 24px);
+  width: auto;
+  margin: 0;
+}
+
+.SEimageDiv3 {
+  display: grid;
+  place-items: center;
+  padding: clamp(8px, 2vw, 24px);
+}
+
+.mekaTitle {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3vw;
+  color: white;
+  text-align: left;
+  letter-spacing: 0;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+.mekaBody {
+  font-family: 'Lato', sans-serif;
+  font-size: 2vw;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.MekatankTestImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mekaTankDiv {
+  width: 100%;
+  right: 21%;
+  bottom: 2%;
+  position: absolute;
+}
+

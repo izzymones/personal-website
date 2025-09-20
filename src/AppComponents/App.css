@@ -2,8 +2,17 @@
   text-align: center;
 }
 
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+a:visited { color: #7a5cff; }
+a:hover   { text-decoration: underline; }
+a:active  { color: #ff4d4d; }
+a:focus   { outline: 2px dashed #1e90ff; outline-offset: 2px; }
+
 .App-header {
-  background-color: #1e1e1e;
+  background-color: #141119;
 }
 
 .borderDiv {

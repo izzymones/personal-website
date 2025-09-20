@@ -1,25 +1,25 @@
 import './App.css';
-import EducationTab from '../Tabs/EducationTab';
-import FavoritesTab from '../Tabs/FavoritesTab';
+
 import GoalsTab from '../Tabs/GoalsTab';
 import HomeTab from '../Tabs/HomeTab';
-import LandingTab from '../Tabs/LandingTab';
-import OriginTab from '../Tabs/OriginTab';
-import ProjectsTab from '../Tabs/ProjectsTab';
-import WorkTab from '../Tabs/WorkTab';
+import AboutMeTab from '../Tabs/AboutMeTab';
+import TVCTab from '../Tabs/TVCTab';
+import BalanceBotTab from '../Tabs/BalanceBotTab';
+import SoftwareEngineeringTab from '../Tabs/SoftwareEngineeringTab';
+
+
+
 
 function MainPage() {
   return (
     <div className="App">
       <header className="App-header">
         <HomeTab></HomeTab>
-        <EducationTab></EducationTab>
+        <AboutMeTab></AboutMeTab>
+        <TVCTab></TVCTab>
+        <BalanceBotTab></BalanceBotTab>
+        <SoftwareEngineeringTab></SoftwareEngineeringTab>
         <GoalsTab></GoalsTab>
-        <WorkTab></WorkTab>
-        <ProjectsTab></ProjectsTab>
-        <OriginTab></OriginTab>
-        <FavoritesTab></FavoritesTab>
-        <LandingTab></LandingTab>
       </header>
     </div>
   );

@@ -1,0 +1,147 @@
+.BalanceBotTab {
+  display: flex;
+  aspect-ratio: 2400/1600;
+  flex-direction: column;
+  background-color: #071137;
+  position: relative;
+}
+  
+
+.botTitle {
+  font-family: 'Lato', serif;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  z-index: 5;
+  color: white;
+  letter-spacing: 0;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  margin: 2vw .5vw .5vw 5vw;
+
+}
+
+.botRow1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.bot3d {
+  position: absolute;
+  left: -25vw;
+  top: -2vw;
+  width: 100vw;
+  z-index: 3;
+
+}
+
+.botSubtitle {
+font-family: 'Lato', sans-serif;
+font-size: 1.8vw;
+color: white;
+position: relative;
+z-index: 5;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+.botTextBox {
+  position: static;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  margin: 2vw 8vw 0vw 8vw;
+}
+
+.botTextBoxTitle {
+font-family: 'Libre Baskerville', serif;
+font-size: 2.5vw;
+color: white;
+text-align: left;
+letter-spacing: 0;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+.botTextBoxBody {
+font-family: 'Lato', sans-serif;
+margin-top: 1vw;
+font-size: 1.4vw;
+font-weight: 300;
+text-align: left;
+color: white;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+.wavyBorderDiv {
+  position: absolute;
+  top: -12.5vw;
+  width: 100vw;
+
+}
+
+.wavyBorder {
+  width: 100vw;
+
+}
+
+.botRow2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.botTestDiv {
+  position: relative;
+  margin-left: 48vw;
+  margin-top: 2.5vw;
+  width: 25vw;
+  overflow: hidden;
+}
+
+.botTest {
+  width: 22vw;
+  display: block;
+}
+
+.leftGraphDiv {
+  position: absolute;
+  width: 32vw;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.rightGraphDiv {
+  top: 15%;
+  position: absolute;
+  right:0;
+  width: 19vw;
+  overflow: hidden;
+}
+
+.leftGraph {
+  width: 32vw;
+}
+
+.rightGraph {
+  width: 20vw;
+}
+
+.botTextBoxBody2 {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  top: 20vw;  
+  left: 76vw;
+  font-size: 1.4vw;
+  width: 15vw;
+  font-weight: 300;
+  text-align: right;
+  color: white;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  }

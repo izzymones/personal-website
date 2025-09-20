@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.TVCTab {
+display: flex;
+aspect-ratio: 2360/4000;
+background-color: #f7f4de;
+flex-direction: column;
+position: relative;
+border-top: 1vw solid #00249d;
+}
+  
+.row {
+flex-direction:row;
+display: flex;
+}
+
+.ticker {
+  overflow: hidden;
+  margin-top: -1vw;
+  white-space: nowrap;
+  width: 100vw;
+  position: relative;
+  z-index: 5;
+  box-sizing: border-box;
+  border-bottom: 1vw solid #00249d;
+  margin-bottom: 1vw;
+}
+
+.ticker__track {
+display: inline-flex;
+will-change: transform;
+animation: ticker-scroll 15s linear infinite;
+backface-visibility: hidden;
+}
+
+.ticker__item {
+flex: 0 0 auto;
+padding-right: 2rem;
+font-family: 'Playfair Display', serif;
+font-size: 8vw;
+color: #00249d;
+letter-spacing: 0;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+@keyframes ticker-scroll {
+0%   { transform: translate3d(0, 0, 0); }
+100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+.ticker__track { animation: none; transform: none; }
+}
+
+.title {
+    font-family: 'Lato', serif;
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+    color: #00249d;
+    letter-spacing: 0;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 2rem;
+}
+
+.subtitle {
+font-family: 'Lato', sans-serif;
+font-size: 1.5vw;
+color: #00249d;
+position: relative;
+z-index: 5;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+
+.textBox {
+  position: static;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin: 4vw 5vw 0% 8vw;
+}
+
+.textBoxTitle {
+font-family: 'Libre Baskerville', serif;
+font-size: 2.5vw;
+color: #00249d;
+text-align: left;
+letter-spacing: 0;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+.textBoxBody {
+font-family: 'Lato', sans-serif;
+font-size: 1vw;
+font-weight: 00;
+text-align: left;
+color: #00249d;
+font-kerning: normal;
+text-rendering: optimizeLegibility;
+}
+
+
+.NMPC {
+  position: static;
+  z-index: 5;
+  width: 20vw;
+  margin-top: 5vw;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #404068;
+}
+
+.droneDiv {
+  position: absolute;
+  z-index: 100;
+  top: -8vw;
+  right: 5vw;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  background: transparent;
+}
+
+.droneImg {
+  width: 100vw;
+  height: 42vw;
+  object-fit: contain;
+  display: block;
+}
+
+.number1 {
+  position: absolute;
+  width: 30vw;
+  z-index: 1;
+  top: 12vw;
+  left: -5vw;  
+  font-family: 'Libre Baskerville', serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #b3b1ce;
+  transform: rotate(15deg);
+  overflow: clip;
+}
+
+.number2 {
+  position: absolute;
+  width: 30vw;
+  z-index: 1;
+  top: 10vw;
+  left: 18vw;  
+  font-family: 'Libre Baskerville', serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #b3b1ce;
+  transform: rotate(-15deg);
+  overflow: clip;
+}
+
+.number3 {
+  position: absolute;
+  width: 20vw;
+  z-index: 1;
+  top: 14vw;
+  right: 2vw;  
+  font-family: 'Libre Baskerville', serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #b3b1ce;
+  transform: rotate(-10deg);
+  overflow: clip;
+}
+
+.number4 {
+  position: absolute;
+  width: 30vw;
+  z-index: 1;
+  top: 14vw;
+  right: 40vw;  
+  font-family: 'Libre Baskerville', serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #b3b1ce;
+  transform: rotate(10deg);
+  overflow: clip;
+}
+.spiral {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes spiral-spin { to { rotate: 1turn; } }
+
+.spiralImg {
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  width: 140vmax;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spiral-spin linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0% 100%;
+  will-change: transform;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 2rem;
+}
+
+.laptopDiv {
+  position: relative;
+  margin: 7vw 0% 0% 10vw;
+  
+}
+
+.laptopImg {
+  width: 20vw;
+  aspect-ratio: 192/160;
+}
+
+.row3 {
+  margin-top: 15vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.row4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.row5 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.circuitDiv {
+  position: absolute;
+  margin: 7vw 0% 0% 10vw;
+  width: 30vw;
+  left: 20vw;
+  top: -13vw;
+}
+.circuitImg {
+  width:30vw;
+}
+
+.droneImgDiv {
+  position: relative;
+  margin: -7vw 0% 0% 5vw;
+  width: 30vw;
+}
+.droneImg {
+  width:30vw;
+}
+
+.testingDiv {
+ margin: 2vw 5vw 5vw 5vw;
+ width: 50vw;
+}
+
+.testingImg {
+  width: 100%;
+}
+
+.textBoxBody2 {
+  position: absolute;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: left;
+  width: 25vw;
+  margin-top: 15vw;
+  margin-left: 25vw;
+  color: #00249d;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  }
