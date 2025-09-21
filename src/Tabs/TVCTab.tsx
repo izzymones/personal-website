@@ -1,5 +1,6 @@
 import { useEffect, useRef, Suspense } from 'react';
 import './TVCTab.css';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
@@ -7,11 +8,8 @@ import SpiralImg from '../images/Spiral.png';
 import LaptopImg from '../images/tinyLaptop.png';
 import CircuitImg from '../images/uglyCircuit.jpeg';
 import DroneImg from '../images/drone.jpeg';
-import TestingImg from '../images/TestingTempImg.jpg';
-
-
-
-
+import TestingImg from '../images/hopYwithStartingRot.gif';
+import GimbalImg from '../images/gimbalTest.gif';
 
 function DroneModel() {
   const base = process.env.PUBLIC_URL || '';
@@ -55,12 +53,25 @@ function DroneModel() {
 useGLTF.preload(`${process.env.PUBLIC_URL || ''}/Assembly_1.glb`);
 
 export default function TVCTab() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  // const END = 1;
+  // const fast = useTransform(scrollYProgress, [0, END], [0, 1]);
+
+  const asteroidRotate = useTransform(scrollYProgress, [0, 1], ['-90deg', '90deg']);
+
+  // const asteroidRotate = useTransform(fast, [0, 1], ['-20deg', '-60deg']);
+
 
   useEffect(() => {
   }, []);
 
   return (
-    <div className="TVCTab">
+    <div ref={containerRef} className="TVCTab">
       <div className="ticker" role="marquee" aria-label="GUIDANCE NAVIGATION CONTROL">
         <div className="ticker__track">
           <span className="ticker__item">GUIDANCE // NAVIGATION // CONTROL //</span>
@@ -126,7 +137,12 @@ export default function TVCTab() {
         </div>
       </div>
       <div className="spiral">
-          <img className="spiralImg" src={SpiralImg} alt="spiral" />
+        <motion.img
+          className="spiralImg"
+          src={SpiralImg}
+          alt=""
+          style={{rotate: asteroidRotate }}
+        />
       </div>
       <div className="row2">
         <div className='laptopDiv'>
@@ -176,10 +192,22 @@ export default function TVCTab() {
       </div>
       <div className="row5">
         <div className='testingDiv'>
-          <img className="testingImg" src={TestingImg} alt="test" />
+          <img className="testingImg" src={GimbalImg} alt="test" />
+          <div className='caption'>
+            Early actuator control testing
+          </div>
         </div>
         <div className='testingDiv'>
           <img className="testingImg" src={TestingImg} alt="test" />
+          <div className='caption'>
+            NMPC system stabilizing from a 15 degree attitude tilt and repositioning one meter along the y axis.
+          </div>
+        </div>
+        <div className='testingDiv'>
+          <img className="testingImg" src={GimbalImg} alt="test" />
+          <div className='caption'>
+            Using a laser pointer to verify servo accuracy
+          </div>
         </div>
       </div>
     </div>

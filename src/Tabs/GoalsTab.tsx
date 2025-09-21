@@ -13,7 +13,6 @@ import rightBooster from "../images/rightBooster.png";
 import fire from "../images/fire.png";
 import fuelTank from "../images/fuelTank.png";
 import rocket from "../images/rocket.png";
-import { useMotionValueEvent } from 'framer-motion';
 
 
 function GoalsTab() {
@@ -78,15 +77,26 @@ function GoalsTab() {
               <div className='outroHeader'>Thank You!</div>
               <div className='outroBody'>Your interest in my website is greatly appreciated. <br></br><br></br>I'm looking for Summer 26' Internships, so don't hesitate to get in touch.</div>
             </div>
-            <div className='linksDiv'>
-              <a href="https://izzymones.github.io/blog-kit/" target="_blank" rel="noopener noreferrer"> Email </a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">Github</a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">Resume</a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">TVC_One_Page</a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">Collocation_Methods_Paper</a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">Music App</a>
-              <a href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">JWST Website</a>
+            <div className="linksDiv">
+              <span className="linkPair">
+              <a className="linkObject" href="mailto:izzymones@gmail.com">izzymones@gmail.com</a>
+              <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href="https://github.com/izzymones" target="_blank" rel="noopener noreferrer">Github</a>
+              </span>
 
+              <span className="linkPair">
+              <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+              <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href="" target="_blank" rel="noopener noreferrer">TVC One Page</a>
+              </span>
+
+              <span className="linkPair">
+                <a className="linkObject" href="" target="_blank" rel="noopener noreferrer">Collocation Methods Paper</a>
+                <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href="https://github.com/izzymones/newmusic" target="_blank" rel="noopener noreferrer">Music App</a>
+              </span>
+
+              <a className="linkObject" href="https://izzymones.github.io/blog-kit/" target="_blank" rel="noopener noreferrer">JWST Website</a>
             </div>
           </div>
         </div>

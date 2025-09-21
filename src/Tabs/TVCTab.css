@@ -175,8 +175,8 @@ text-rendering: optimizeLegibility;
   position: absolute;
   width: 20vw;
   z-index: 1;
-  top: 14vw;
-  right: 2vw;  
+  top: 16vw;
+  right: 24vw;  
   font-family: 'Libre Baskerville', serif;
   font-size: 7vw;
   font-weight: bold;
@@ -202,22 +202,15 @@ text-rendering: optimizeLegibility;
   position: absolute;
   inset: 0;
   overflow: hidden;
-  pointer-events: none;
   z-index: 0;
 }
 
-@keyframes spiral-spin { to { rotate: 1turn; } }
 
 .spiralImg {
   position: absolute;
-  top: 0%;
-  left: -50%;
+  top: -50vw;
+  left: -22vw;
   width: 140vmax;
-  transform: translate(-50%, -50%) rotate(0deg);
-  animation: spiral-spin linear both;
-  animation-timeline: scroll(root block);
-  animation-range: 0% 100%;
-  will-change: transform;
 }
 
 .row2 {
@@ -279,12 +272,14 @@ text-rendering: optimizeLegibility;
 }
 
 .testingDiv {
- margin: 2vw 5vw 5vw 5vw;
- width: 50vw;
+ margin: 2vw 2vw 2vw 2vw;
+ width: 33vw;
 }
 
 .testingImg {
   width: 100%;
+  gap: 2vw;
+  
 }
 
 .textBoxBody2 {
@@ -299,4 +294,8 @@ text-rendering: optimizeLegibility;
   color: #00249d;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
+  }
+
+  .caption {
+    color: #00249d;
   }

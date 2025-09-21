@@ -54,7 +54,16 @@ function AboutMeTab() {
           </div>
           <h1 className='header' >About Me</h1>
           <p className='body'>
-          Hi! My name is Isidore Mones. I’m a Mechanical and Aerospace Engineering double major at UC Davis, fascinated by making complex systems balance, fly, and operate autonomously. From building a thrust-vector-controlled drone with nonlinear MPC to tackling tough dynamics and control problems, I enjoy solving challenges with persistence, creativity, and independence. I’m especially excited about guidance, navigation, and control for rockets, spacecraft, and autonomous vehicles.          </p>
+            Hi! I’m Isidore Mones, a Mechanical & Aerospace Engineering double major at UC Davis. I am extremely passionate about control theory for aerospace applications, especially GNC for rockets, spacecrafts, and autonomous vehicles. I love problem solving and I am excellent at independent research and implementation. I am hardworking and resilient in the face of challenges and failures.
+          </p>
+          <div className="linksDiv">
+              <span className="linkPair">
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+                <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">TVC One Page</a>
+              </span>
+              <a className="linkObject" href="https://github.com/izzymones/fits-file-processing" target="_blank" rel="noopener noreferrer">Comparison of Direct Methods for NMPC Applied to a Thrust Vector Drone</a>
+            </div>
           <div className='cowDiv'>
             <img className="CowImg" src={CowImg} alt="cow" />
           </div>

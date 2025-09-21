@@ -4,7 +4,7 @@ import { OrbitControls, useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import WavyBorder from '../images/wavyBorder.png';
-import botTestImg from '../images/BalanceBotTempImg.jpg';
+import botTestImg from '../images/balanceBot.gif';
 import LeftGraphImg from '../images/leftGraph.png';
 import RightGraphImg from '../images/rightGraph.png';
 

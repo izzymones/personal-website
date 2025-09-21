@@ -100,7 +100,8 @@ text-rendering: optimizeLegibility;
   position: relative;
   margin-left: 48vw;
   margin-top: 2.5vw;
-  width: 25vw;
+  height: 32vw;
+  width: 22vw;
   overflow: hidden;
 }
 
