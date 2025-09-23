@@ -85,18 +85,16 @@ function GoalsTab() {
               </span>
 
               <span className="linkPair">
-              <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
               <span className="sep" aria-hidden="true"></span>
-                <a className="linkObject" href="" target="_blank" rel="noopener noreferrer">TVC One Page</a>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer"> Collocation Methods Paper (PDF) </a>
               </span>
 
               <span className="linkPair">
-                <a className="linkObject" href="" target="_blank" rel="noopener noreferrer">Collocation Methods Paper</a>
-                <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href="https://izzymones.github.io/blog-kit" target="_blank" rel="noopener noreferrer">JWST Website</a>
+              <span className="sep" aria-hidden="true"></span>
                 <a className="linkObject" href="https://github.com/izzymones/newmusic" target="_blank" rel="noopener noreferrer">Music App</a>
               </span>
-
-              <a className="linkObject" href="https://izzymones.github.io/blog-kit/" target="_blank" rel="noopener noreferrer">JWST Website</a>
             </div>
           </div>
         </div>

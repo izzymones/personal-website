@@ -59,12 +59,7 @@ export default function TVCTab() {
     offset: ["start end", "end start"],
   });
 
-  // const END = 1;
-  // const fast = useTransform(scrollYProgress, [0, END], [0, 1]);
-
-  const asteroidRotate = useTransform(scrollYProgress, [0, 1], ['-90deg', '90deg']);
-
-  // const asteroidRotate = useTransform(fast, [0, 1], ['-20deg', '-60deg']);
+  const spiralRotate = useTransform(scrollYProgress, [0, 1], ['-90deg', '90deg']);
 
 
   useEffect(() => {
@@ -141,7 +136,7 @@ export default function TVCTab() {
           className="spiralImg"
           src={SpiralImg}
           alt=""
-          style={{rotate: asteroidRotate }}
+          style={{rotate: spiralRotate }}
         />
       </div>
       <div className="row2">
@@ -178,11 +173,9 @@ export default function TVCTab() {
           <div className='textBoxBody2'>
             Check out the code for this exciting ongoing project
               <a href="https://github.com/izzymones/hop" target="_blank" rel="noopener noreferrer"> HERE!</a><br></br><br></br>
-              If you're interested in learning more check out this
-            <a href="https://github.com/izzymones/hop" target="_blank" rel="noopener noreferrer"> One Page Outline </a>
-            of the project and my 
-            <a href="https://github.com/izzymones/hop" target="_blank" rel="noopener noreferrer"> Paper </a>
-            about the effect of different numerical methods on NMPC control.
+              If you're interested in learning more check out my 
+              <a href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer"> Technical Report (PDF) </a>
+            on the effect of different numerical methods on NMPC control.
 
           </div>
           <div className='textBoxBody2'>

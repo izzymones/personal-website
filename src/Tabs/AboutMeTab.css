@@ -71,6 +71,22 @@ margin-left: 10%;
   position: relative;
   color: white;
   font-size: 1.5vw;
-  padding:5vw 5vw 0% 5vw;
+  padding:2vw 5vw 3vw 5vw;
   z-index: 1;
 }
+
+.TVCDroneCartoon {
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  bottom: 0vw;
+}
+
+.droneClipDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1400;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+  z-index: 2;
+  }

@@ -8,63 +8,77 @@
   align-items: center;
   }
   
-  .name {
-    font-size: 10vw;
-    color: white;
-    position: relative;
-    text-align: center;
-    font-family: Futura;
-    font-weight: bold;
-  }
-  
-  .spaceShip {
-    position: absolute;
-    height: 60%;
-    margin-top: 14.2%;
-    margin-left: 0.6%;
-  }
-  
-  .movingFire {
-    position: absolute;
-    height: 60%;
-    margin-top: 26%;
-  }
-  
-  .shadowClipDiv {
-    position: absolute;
-    width: 100%;
-    aspect-ratio: 2360/1480;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    overflow: clip;
-    z-index: 2;
-   }
-  
-  
-  .homeBackground {
-    position: absolute;
-    width: 100%;
-    aspect-ratio: 2360/1480;
-    
+.name {
+  font-size: 10vw;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: Futura;
+  font-weight: bold;
+}
+
+.spaceShip {
+  position: absolute;
+  height: 60%;
+  margin-top: 14.2%;
+  margin-left: 0.6%;
+}
+
+.movingFire {
+  position: absolute;
+  height: 60%;
+  margin-top: 25vw;
+}
+
+.movingFire2 {
+  position: absolute;
+  height: 40%;
+  margin-top: 33vw;
+  margin-left: 9vw;
+}
+
+.movingFire3 {
+  position: absolute;
+  height: 40%;
+  margin-top: 33vw;
+  margin-left: -9vw;
+}
+
+.shadowClipDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1480;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+  z-index: 2;
   }
 
-  .cloudDiv {
-    position: absolute;
-    width: 100%;
-    aspect-ratio: 2360/1480;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    overflow: clip;
-    z-index: 3;
 
-
-  }
-  .clouds {
-    top: 90%;
-
-  }
+.homeBackground {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1480;
   
-  .shadow {
-    position: absolute;
-    width: 35%;
-    margin-top: 48%;
-    margin-left: -27.5%;
+}
+
+.cloudDiv {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 2360/1480;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: clip;
+  z-index: 3;
+
+
+}
+.clouds {
+  top: 90%;
+
+}
+
+.shadow {
+  position: absolute;
+  width: 35%;
+  margin-top: 48%;
+  margin-left: -27.5%;
 }

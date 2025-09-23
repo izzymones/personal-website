@@ -146,3 +146,19 @@ text-rendering: optimizeLegibility;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   }
+
+  .balanceBotCartoon {
+    position: absolute;
+    width: 20vw;
+    bottom: -1vw;
+    z-index: 5;
+  }
+
+  .balanceBotClipDiv {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 2360/1600;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    overflow: clip;
+    z-index: 2;
+    }

@@ -30,6 +30,8 @@ function HomeTab() {
   const { scrollYProgress } = useScroll();
 
   const rocketY = useTransform(scrollYProgress, [0, 1], ['5%', '-3000%']);
+  const rocketY2 = useTransform(scrollYProgress, [0, 1], ['5%', '-4500%']);
+
   const shadowX = useTransform(scrollYProgress, [0, 1], ['0%', '-3000%']);
   const shadowY = useTransform(scrollYProgress, [0, 1], ['0%', '2000%']);
 
@@ -72,6 +74,36 @@ function HomeTab() {
         alt=""
         style={{
           translateY: rocketY,
+          visibility: isAtTop ? 'hidden': 'visible'
+        }}
+        transition={{
+          duration: 0.1,
+          repeat: isAtTop ? Infinity : 0,
+          repeatType: 'loop',
+          ease: 'linear',
+        }}
+      />
+      <motion.img
+        className="movingFire2"
+        src={fire}
+        alt=""
+        style={{
+          translateY: rocketY2,
+          visibility: isAtTop ? 'hidden': 'visible'
+        }}
+        transition={{
+          duration: 0.1,
+          repeat: isAtTop ? Infinity : 0,
+          repeatType: 'loop',
+          ease: 'linear',
+        }}
+      />
+      <motion.img
+        className="movingFire3"
+        src={fire}
+        alt=""
+        style={{
+          translateY: rocketY2,
           visibility: isAtTop ? 'hidden': 'visible'
         }}
         transition={{

@@ -2,11 +2,14 @@ import { useEffect, useRef, Suspense } from 'react';
 import './BalanceBotTab.css';
 import { OrbitControls, useGLTF, Center } from '@react-three/drei';
 import * as THREE from 'three';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import WavyBorder from '../images/wavyBorder.png';
 import botTestImg from '../images/balanceBot.gif';
 import LeftGraphImg from '../images/leftGraph.png';
 import RightGraphImg from '../images/rightGraph.png';
+import BalanceBotCartoonImg from '../images/balanceBotCartoon.png';
+
 
 
 
@@ -50,13 +53,30 @@ function BotModel() {
 }
 
 function BalanceBotTab() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+  const botX = useTransform(scrollYProgress, [0, 1], ['700%', '-300%']);
+
 
 
   useEffect(() => {
   }, []);
 
   return (
-    <div className="BalanceBotTab">
+    <div ref={containerRef} className="BalanceBotTab">
+      <div className='balanceBotClipDiv'>
+        <motion.img
+          className="balanceBotCartoon"
+          src={BalanceBotCartoonImg}
+          alt=""
+          style={{
+            translateX: botX,
+          }}
+        />
+      </div>
       <div className='wavyBorderDiv'>
         <img className="wavyBorder" src={WavyBorder} alt="wavy" />
       </div>
