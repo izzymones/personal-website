@@ -82,12 +82,15 @@ function GoalsTab() {
               <a className="linkObject" href="mailto:izzymones@gmail.com">izzymones@gmail.com</a>
               <span className="sep" aria-hidden="true"></span>
                 <a className="linkObject" href="https://github.com/izzymones" target="_blank" rel="noopener noreferrer">Github</a>
+              <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume</a>
+
               </span>
 
               <span className="linkPair">
-                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/TVC_One_Pager.pdf`} target="_blank" rel="noopener noreferrer"> TVC One Pager </a>
               <span className="sep" aria-hidden="true"></span>
-                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer"> Collocation Methods Paper (PDF) </a>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer"> Collocation Methods Paper </a>
               </span>
 
               <span className="linkPair">

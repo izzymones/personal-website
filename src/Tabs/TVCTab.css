@@ -282,6 +282,11 @@ text-rendering: optimizeLegibility;
   
 }
 
+.testingImg2 {
+  width: 60%;
+  gap: 2vw;
+}
+
 .textBoxBody2 {
   position: absolute;
   font-family: 'Lato', sans-serif;

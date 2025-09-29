@@ -10,6 +10,8 @@ import CircuitImg from '../images/uglyCircuit.jpeg';
 import DroneImg from '../images/drone.jpeg';
 import TestingImg from '../images/hopYwithStartingRot.gif';
 import GimbalImg from '../images/gimbalTest.gif';
+import GimbalTestImg from '../images/gimbal_test.gif';
+
 
 function DroneModel() {
   const base = process.env.PUBLIC_URL || '';
@@ -197,9 +199,8 @@ export default function TVCTab() {
           </div>
         </div>
         <div className='testingDiv'>
-          <img className="testingImg" src={GimbalImg} alt="test" />
+          <img className="testingImg2" src={GimbalTestImg} alt="test" />
           <div className='caption'>
-            Using a laser pointer to verify servo accuracy
           </div>
         </div>
       </div>

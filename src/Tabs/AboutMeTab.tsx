@@ -56,11 +56,13 @@ function AboutMeTab() {
           </div>
           <div className="linksDiv">
               <span className="linkPair">
-                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume(PDF)</a>
                 <span className="sep" aria-hidden="true"></span>
                 <a className="linkObject" href="https://github.com/izzymones" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span className="sep" aria-hidden="true"></span>
+                <a className="linkObject" href={`${process.env.PUBLIC_URL}/TVC_One_Pager.pdf`} target="_blank" rel="noopener noreferrer">TVC One Pager(PDF)</a>
               </span>
-              <a className="linkObject" href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer">Comparison of Direct Methods for NMPC Applied to a Thrust Vector Drone (PDF)</a>
+              <a className="linkObject" href={`${process.env.PUBLIC_URL}/Technical_Report.pdf`} target="_blank" rel="noopener noreferrer">Comparison of Direct Methods for NMPC Applied to a Thrust Vector Drone(PDF)</a>
             </div>
         </div>
       </div>
