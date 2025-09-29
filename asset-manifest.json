@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.fc9d7b58.css",
-    "main.js": "/personal-website/static/js/main.996a8c79.js",
+    "main.css": "/personal-website/static/css/main.3268c5ee.css",
+    "main.js": "/personal-website/static/js/main.0cf71c3a.js",
+    "static/media/gimbal_test.gif": "/personal-website/static/media/gimbal_test.a5fdff23b778f2b4473f.gif",
     "static/media/balanceBot.gif": "/personal-website/static/media/balanceBot.2697dbeb3064c902c840.gif",
     "static/media/gimbalTest.gif": "/personal-website/static/media/gimbalTest.220f2237e5e48bd7c01b.gif",
     "static/media/highresshortvid.gif": "/personal-website/static/media/highresshortvid.58599c56cf573bc87234.gif",
@@ -43,11 +44,11 @@
     "static/media/tinyCow.png": "/personal-website/static/media/tinyCow.bba202f852682cee9e37.png",
     "static/media/tinyLaptop.png": "/personal-website/static/media/tinyLaptop.2b9f690cd067b26d1612.png",
     "index.html": "/personal-website/index.html",
-    "main.fc9d7b58.css.map": "/personal-website/static/css/main.fc9d7b58.css.map",
-    "main.996a8c79.js.map": "/personal-website/static/js/main.996a8c79.js.map"
+    "main.3268c5ee.css.map": "/personal-website/static/css/main.3268c5ee.css.map",
+    "main.0cf71c3a.js.map": "/personal-website/static/js/main.0cf71c3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc9d7b58.css",
-    "static/js/main.996a8c79.js"
+    "static/css/main.3268c5ee.css",
+    "static/js/main.0cf71c3a.js"
   ]
 }
